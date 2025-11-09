@@ -44,6 +44,13 @@ To run this project on Kaggle, follow these steps:
 - `history_attn_joint_main.json`: Training history for the Attention U-Net model with joint training
 - `history_attn_seg_only_main.json`: Training history for the Attention U-Net model with segmentation-only training
 - `README.md`: Project documentation and instructions
+ - `attention_unet_tumor_analysis.ipynb`: Main notebook containing both U-Net and Attention U-Net implementations, training code, and comparative analysis
+ - `training history/history_attn_joint_main.json`: Training history for the Attention U-Net model with joint training
+ - `training history/history_attn_seg_only_main.json`: Training history for the Attention U-Net model with segmentation-only training
+ - `loss curves/attn_joint_main_total_losses.png`: Training loss curves for the joint Attention U-Net run
+ - `loss curves/attn_joint_main_joint_losses.png`: Joint (segmentation + auxiliary) loss curves
+ - `loss curves/attn_seg_only_main_seg_losses.png`: Segmentation-only training loss curves
+ - `README.md`: Project documentation and instructions
 
 ## Model Implementations
 
@@ -60,8 +67,8 @@ To run this project on Kaggle, follow these steps:
 - Extends the U-Net architecture with attention mechanisms
 - Designed to focus on relevant features during segmentation
 - Two training approaches:
-  1. Joint training (`history_attn_joint_main.json`)
-  2. Segmentation-only training (`history_attn_seg_only_main.json`)
+   1. Joint training (`training history/history_attn_joint_main.json`)
+   2. Segmentation-only training (`training history/history_attn_seg_only_main.json`)
 
 The notebook includes code for training both models and analyzing their segmentation performance, allowing for direct comparison of their effectiveness on the BRISC dataset.
 
