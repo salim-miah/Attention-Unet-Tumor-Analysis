@@ -52,6 +52,10 @@ To run this project on Kaggle, follow these steps:
 - Serves as a baseline model for performance comparison
 - Implemented for direct comparison with Attention U-Net
 
+#### Standard U-Net Segmentation Results
+![U-Net Segmentation Results](assets/unet_segmentation_results.png)
+*The image shows the segmentation results of the standard U-Net model on brain tumor MRI scans. From left to right: Original MRI scan, Ground truth segmentation mask, U-Net predicted segmentation mask.*
+
 ### Attention U-Net
 - Extends the U-Net architecture with attention mechanisms
 - Designed to focus on relevant features during segmentation
